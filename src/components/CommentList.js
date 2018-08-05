@@ -4,7 +4,7 @@ export default () => {
 
 	return(
 		<div>
-			Comment List wrapper
+			Comment List Wrapper
 		</div>
 	);
 };
