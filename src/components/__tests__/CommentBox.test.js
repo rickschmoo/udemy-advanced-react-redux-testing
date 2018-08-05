@@ -3,10 +3,18 @@ import { mount } from 'enzyme';
 
 import CommentBox from 'components/CommentBox';
 
+// redux wiring
+import Root from 'Root';
+
+
+
 let wrappedAppComponent;
 beforeEach(() => {
-	wrappedAppComponent = mount(<CommentBox />);
-
+	wrappedAppComponent = mount(
+		<Root>
+			<CommentBox />
+		</Root>
+	);
 });
 
 afterEach(() => {
